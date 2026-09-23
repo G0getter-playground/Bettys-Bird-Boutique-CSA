@@ -1,0 +1,219 @@
+<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="integrationGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6f42c1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e83e8c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="externalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fd7e14;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffc107;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="securityGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#28a745;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#20c997;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2"/>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    AI Customer Service Agent - Integration Architecture
+  </text>
+
+  <!-- External Systems Layer -->
+  <g id="externalSystems">
+    <rect x="50" y="80" width="1100" height="140" fill="#fff3cd" stroke="#856404" stroke-width="2" rx="10"/>
+    <text x="70" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#856404">External Systems & Third-Party Services</text>
+
+    <!-- Website Integration -->
+    <rect x="100" y="130" width="180" height="70" fill="#fff" stroke="#856404" stroke-width="1" rx="5"/>
+    <text x="190" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#856404">Customer Website</text>
+    <text x="190" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Chat Widget</text>
+    <text x="190" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">JavaScript SDK</text>
+
+    <!-- Mobile Apps -->
+    <rect x="300" y="130" width="180" height="70" fill="#fff" stroke="#856404" stroke-width="1" rx="5"/>
+    <text x="390" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#856404">Mobile Applications</text>
+    <text x="390" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">iOS/Android Apps</text>
+    <text x="390" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">RESTful API</text>
+
+    <!-- CRM Systems -->
+    <rect x="500" y="130" width="180" height="70" fill="#fff" stroke="#856404" stroke-width="1" rx="5"/>
+    <text x="590" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#856404">CRM Integration</text>
+    <text x="590" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Customer Records</text>
+    <text x="590" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Salesforce/HubSpot</text>
+
+    <!-- Social Media -->
+    <rect x="700" y="130" width="180" height="70" fill="#fff" stroke="#856404" stroke-width="1" rx="5"/>
+    <text x="790" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#856404">Social Media</text>
+    <text x="790" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Facebook Messenger</text>
+    <text x="790" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">WhatsApp Business</text>
+
+    <!-- Analytics -->
+    <rect x="900" y="130" width="180" height="70" fill="#fff" stroke="#856404" stroke-width="1" rx="5"/>
+    <text x="990" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#856404">Analytics Platforms</text>
+    <text x="990" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Google Analytics</text>
+    <text x="990" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Custom Dashboards</text>
+  </g>
+
+  <!-- API Gateway Layer -->
+  <g id="apiGateway">
+    <rect x="50" y="260" width="1100" height="100" fill="url(#integrationGrad)" stroke="#6f42c1" stroke-width="2" rx="10" opacity="0.1"/>
+    <rect x="50" y="260" width="1100" height="100" fill="none" stroke="#6f42c1" stroke-width="2" rx="10"/>
+    <text x="70" y="290" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6f42c1">API Gateway & Integration Layer</text>
+
+    <!-- Rate Limiting -->
+    <rect x="100" y="310" width="200" height="40" fill="#fff" stroke="#6f42c1" stroke-width="1" rx="5"/>
+    <text x="200" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6f42c1">Rate Limiting & Throttling</text>
+    <text x="200" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Request Management</text>
+
+    <!-- Authentication -->
+    <rect x="320" y="310" width="200" height="40" fill="#fff" stroke="#6f42c1" stroke-width="1" rx="5"/>
+    <text x="420" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6f42c1">Authentication & Authorization</text>
+    <text x="420" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">API Key Management</text>
+
+    <!-- Load Balancing -->
+    <rect x="540" y="310" width="200" height="40" fill="#fff" stroke="#6f42c1" stroke-width="1" rx="5"/>
+    <text x="640" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6f42c1">Load Balancing</text>
+    <text x="640" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Traffic Distribution</text>
+
+    <!-- Request Routing -->
+    <rect x="760" y="310" width="200" height="40" fill="#fff" stroke="#6f42c1" stroke-width="1" rx="5"/>
+    <text x="860" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6f42c1">Request Routing</text>
+    <text x="860" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Intelligent Routing</text>
+  </g>
+
+  <!-- Core Agent Layer -->
+  <g id="coreAgent">
+    <rect x="50" y="400" width="1100" height="120" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="10"/>
+    <text x="70" y="430" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1976d2">Betty's Bird Brain - Core AI Agent</text>
+
+    <!-- Session Manager -->
+    <rect x="100" y="450" width="170" height="60" fill="#fff" stroke="#1976d2" stroke-width="1" rx="5"/>
+    <text x="185" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1976d2">Session Manager</text>
+    <text x="185" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Multi-channel Context</text>
+    <text x="185" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Conversation State</text>
+
+    <!-- Intent Classifier -->
+    <rect x="290" y="450" width="170" height="60" fill="#fff" stroke="#1976d2" stroke-width="1" rx="5"/>
+    <text x="375" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1976d2">Intent Classifier</text>
+    <text x="375" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Request Analysis</text>
+    <text x="375" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Tool Selection</text>
+
+    <!-- Response Generator -->
+    <rect x="480" y="450" width="170" height="60" fill="#fff" stroke="#1976d2" stroke-width="1" rx="5"/>
+    <text x="565" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1976d2">Response Generator</text>
+    <text x="565" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Gemini 2.5 Flash</text>
+    <text x="565" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Natural Language</text>
+
+    <!-- Context Manager -->
+    <rect x="670" y="450" width="170" height="60" fill="#fff" stroke="#1976d2" stroke-width="1" rx="5"/>
+    <text x="755" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1976d2">Context Manager</text>
+    <text x="755" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Customer History</text>
+    <text x="755" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Preference Learning</text>
+
+    <!-- Quality Monitor -->
+    <rect x="860" y="450" width="170" height="60" fill="#fff" stroke="#1976d2" stroke-width="1" rx="5"/>
+    <text x="945" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1976d2">Quality Monitor</text>
+    <text x="945" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Response Validation</text>
+    <text x="945" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Guardrail Checks</text>
+  </g>
+
+  <!-- Data Integration Layer -->
+  <g id="dataIntegration">
+    <rect x="50" y="560" width="1100" height="120" fill="#f8f9fa" stroke="#6c757d" stroke-width="2" rx="10"/>
+    <text x="70" y="590" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6c757d">Data Integration & Storage Layer</text>
+
+    <!-- Database Connector -->
+    <rect x="100" y="610" width="200" height="60" fill="#fff" stroke="#dc3545" stroke-width="1" rx="5"/>
+    <text x="200" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc3545">Database Connector</text>
+    <text x="200" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">MySQL/Cloud SQL</text>
+    <text x="200" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">MCP Toolbox</text>
+
+    <!-- Document Store -->
+    <rect x="320" y="610" width="200" height="60" fill="#fff" stroke="#6f42c1" stroke-width="1" rx="5"/>
+    <text x="420" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6f42c1">Document Store</text>
+    <text x="420" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Vertex AI Search</text>
+    <text x="420" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Knowledge Base</text>
+
+    <!-- Cache Layer -->
+    <rect x="540" y="610" width="200" height="60" fill="#fff" stroke="#28a745" stroke-width="1" rx="5"/>
+    <text x="640" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#28a745">Cache Layer</text>
+    <text x="640" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Redis/Memcached</text>
+    <text x="640" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Fast Response</text>
+
+    <!-- External APIs -->
+    <rect x="760" y="610" width="200" height="60" fill="#fff" stroke="#fd7e14" stroke-width="1" rx="5"/>
+    <text x="860" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fd7e14">External API Gateway</text>
+    <text x="860" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Google Search API</text>
+    <text x="860" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Weather/Shipping</text>
+  </g>
+
+  <!-- Security & Compliance Layer -->
+  <g id="securityLayer">
+    <rect x="50" y="720" width="1100" height="100" fill="url(#securityGrad)" stroke="#28a745" stroke-width="2" rx="10" opacity="0.1"/>
+    <rect x="50" y="720" width="1100" height="100" fill="none" stroke="#28a745" stroke-width="2" rx="10"/>
+    <text x="70" y="750" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#28a745">Security, Monitoring & Compliance</text>
+
+    <!-- Encryption -->
+    <rect x="100" y="770" width="180" height="40" fill="#fff" stroke="#28a745" stroke-width="1" rx="5"/>
+    <text x="190" y="790" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#28a745">Data Encryption</text>
+    <text x="190" y="805" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">TLS/SSL, AES-256</text>
+
+    <!-- Monitoring -->
+    <rect x="300" y="770" width="180" height="40" fill="#fff" stroke="#28a745" stroke-width="1" rx="5"/>
+    <text x="390" y="790" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#28a745">Real-time Monitoring</text>
+    <text x="390" y="805" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Performance Metrics</text>
+
+    <!-- Compliance -->
+    <rect x="500" y="770" width="180" height="40" fill="#fff" stroke="#28a745" stroke-width="1" rx="5"/>
+    <text x="590" y="790" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#28a745">Compliance</text>
+    <text x="590" y="805" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">GDPR, CCPA</text>
+
+    <!-- Audit Logging -->
+    <rect x="700" y="770" width="180" height="40" fill="#fff" stroke="#28a745" stroke-width="1" rx="5"/>
+    <text x="790" y="790" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#28a745">Audit Logging</text>
+    <text x="790" y="805" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Complete Traceability</text>
+
+    <!-- Backup Systems -->
+    <rect x="900" y="770" width="180" height="40" fill="#fff" stroke="#28a745" stroke-width="1" rx="5"/>
+    <text x="990" y="790" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#28a745">Backup & Recovery</text>
+    <text x="990" y="805" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Disaster Recovery</text>
+  </g>
+
+  <!-- Connection Lines -->
+  <!-- External to API Gateway -->
+  <line x1="190" y1="200" x2="200" y2="310" stroke="#856404" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="390" y1="200" x2="420" y2="310" stroke="#856404" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="590" y1="200" x2="640" y2="310" stroke="#856404" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="790" y1="200" x2="860" y2="310" stroke="#856404" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- API Gateway to Core Agent -->
+  <line x1="420" y1="360" x2="375" y2="450" stroke="#6f42c1" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="640" y1="360" x2="565" y2="450" stroke="#6f42c1" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- Core Agent to Data -->
+  <line x1="185" y1="510" x2="200" y2="610" stroke="#1976d2" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="375" y1="510" x2="420" y2="610" stroke="#1976d2" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="565" y1="510" x2="640" y2="610" stroke="#1976d2" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="755" y1="510" x2="860" y2="610" stroke="#1976d2" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Data to Security -->
+  <line x1="300" y1="670" x2="300" y2="770" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500" y1="670" x2="500" y2="770" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="670" x2="700" y2="770" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="900" y1="670" x2="900" y2="770" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Bidirectional arrows for real-time communication -->
+  <line x1="990" y1="200" x2="945" y2="450" stroke="#ffc107" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <line x1="945" y1="460" x2="990" y2="210" stroke="#ffc107" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+</svg>

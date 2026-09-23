@@ -1,0 +1,23 @@
+sources:
+  betty_boutique_db:
+    kind: mysql
+    host: ${MYSQL_HOST}
+    port: ${MYSQL_PORT}
+    user: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+    database: betty
+
+tools:
+  get-product-price:
+    kind: mysql-sql
+    source: betty_boutique_db
+    description: "Query the product database to find the price of a specific product by name. Use this tool when customers ask about product pricing or availability."
+    statement: "SELECT product_name, price FROM products WHERE product_name LIKE CONCAT('%', ?, '%')"
+    parameters:
+      - name: product_name
+        type: string
+        description: "The name of the product to search for. Can be a partial name (e.g. 'canary' will match 'Canary Seed')."
+
+toolsets:
+  betty_tools:
+    - get-product-price
