@@ -479,8 +479,6 @@ gcloud run deploy betty-bird-agent \
 **Technical Support**: 24/7 monitoring and maintenance
 **Business Liaison**: Customer success and training
 
-**Project Repository**: [https://github.com/Imsharad/ai-customer-service-agent-google-adk](https://github.com/Imsharad/ai-customer-service-agent-google-adk)
-
 ---
 
 ### Ready to Transform Your Customer Experience?
